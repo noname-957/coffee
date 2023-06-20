@@ -1,4 +1,5 @@
-const products = [
+{
+  "products": [
   {
     id: 1,
     ko_name: '그라니토스 데 오르티스 2000',
@@ -36,3 +37,4 @@ const products = [
     roasting_date: '2023-06-19',
   },
 ];
+}
