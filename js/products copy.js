@@ -36,3 +36,28 @@ const products = [
     roasting_date: '2023-06-19',
   },
 ];
+
+// const koProduntName = document.querySelector('#product-name p:first-child');
+// const enProduntName = document.querySelector('#product-name p:last-child');
+
+// const product1 = products[1];
+
+// koProduntName.innerText = `[${product1.category}] ${product1.ko_country} ${product1.ko_name} [${product1.roasting}]`;
+// enProduntName.innerText = `${product1.en_country} ${product1.en_name}`;
+
+// const bgImage = document.innerText();
+// bgImage.src = `background-image: url('img/bean_4.jpg');`;
+// document.querySelector('#singleorigin1 div:first-child .style').appendChild(bgImage);
+
+// json 배열 데이터 [{},{}]
+// const productHtmlArray = json.products.map((product) => {
+//   return (
+//     "<div> 한국명 :<a href+'www.page.com/orderdetail.html?product_id=" +
+//     product.id +
+//     "'>" +
+//     product.ko_name
+//   );
+// }
+
+// 우리가 원하는 위치에 넣을거
+// document.getElementById('products_area').innerText = productHtmlArray.join('');
