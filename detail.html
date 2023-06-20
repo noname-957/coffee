@@ -220,83 +220,129 @@
         </header>
       </div>
     </header>
+    <!-- 상품이미지와 주문서 -->
     <section>
-      <div class="container">
-        <!--상품이미지와 주문서-->
-        <div class="row">
-          <div class="col">
+      <div class="container p-5">
+        <div class="row position-relative">
+          <!-- 이미지 -->
+          <div class="col pe-5">
             <img src="img/bean_4.jpg" class="rounded float-start" alt="..." width="100%" />
           </div>
-          <div class="col">
-            <h3>[싱글오리진] 과테말라 실베리오 [중강배전]</h3>
-            <h5 class="text-body-tertiary">[Guatemala Sliverio [Medium Dark Roasting]</h5>
-            <h3>14,000</h3>
-            <h5 class="text-body-tertiary">제조일</h5>
-            <h5 class="text-body-tertiary">배전</h5>
-            <h5 class="text-body-tertiary">아로마</h5>
+          <!-- 주문서 -->
+          <div class="col ps-5 position-relative start-0">
+            <h2 class="pb-2">[싱글오리진] 과테말라</h2>
+            <h2 class="pb-2">실베리오</h2>
+            <h2 class="pb-2">[중강배전]</h2>
+            <h5 class="text-body-tertiary">
+              Guatemala <br />Sliverio <br />[Medium Dark Roasting]
+            </h5>
+            <h3 class="pt-3 pb-3">14,000원</h3>
+            <h5 class="text-body-tertiary pb-1">제조일</h5>
+            <h5 class="text-body-tertiary fs-6">배전</h5>
+            <h5 class="text-body-tertiary fs-6 pb-4">아로마</h5>
             <hr />
-            <div class="container">
-              <div class="row">
-                <div class="col-2">배송방법</div>
-                <div class="col-8">택배</div>
-
-                <div class="w-100"></div>
-
-                <div class="col-2">배송비</div>
-                <div class="col-8">3,000원 (40,000원 이상 구매 시 무료배송)</div>
+            <div class="row">
+              <div class="col-2 text-body-tertiary fs-6">배송방법</div>
+              <div class="col-10">택배</div>
+              <div class="w-100"></div>
+              <div class="col-2 text-body-tertiary fs-6">배송비</div>
+              <div class="col-10">3,000원 (40,000원 이상 구매 시 무료배송)</div>
+            </div>
+            <hr />
+            <div class="row pb-2">
+              <div class="col-2 text-body-tertiary fs-6">옵션</div>
+              <div class="col-10">
+                <div class="form-floating">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="form-select-sm example"
+                    required>
+                    <option selected>[필수] 옵션을 선택해주세요</option>
+                    <option value="1">200g</option>
+                    <option value="2">500g (+14,000원)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row pt-2">
+              <div class="col-2 text-body-tertiary fs-6">분쇄</div>
+              <div class="col-10">
+                <div class="form-floating">
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label="form-select-sm example"
+                    required>
+                    <option selected>[필수] 옵션을 선택해주세요</option>
+                    <option value="1">Whole beans</option>
+                    <option value="2">Grinded</option>
+                  </select>
+                </div>
               </div>
             </div>
             <hr />
-            <div class="container">
+            <!-- 주문 -->
+            <div class="position-relative start-50 pt-5 pd-5">
+              <span>총 금액</span><span class="fs-3 ps-5">0원</span>
+            </div>
+            <div class="container text-center pt-5">
               <div class="row">
-                <div class="col-2">옵션</div>
-                <div class="col-8">
-                  <div class="form-floating">
-                    <select
-                      class="form-select"
-                      id="floatingSelect"
-                      aria-label="Floating label select example"
-                      required>
-                      <option selected>[필수] 옵션을 선택해주세요</option>
-                      <option value="1">200g</option>
-                      <option value="2">500g (+14,000원)</option>
-                    </select>
-                  </div>
-
-                  <div class="w-100"></div>
-
-                  <div class="col-2">분쇄</div>
-                  <div class="col-8">
-                    <div class="form-floating">
-                      <select
-                        class="form-select"
-                        id="floatingSelect"
-                        aria-label="Floating label select example"
-                        required>
-                        <option selected>[필수] 옵션을 선택해주세요</option>
-                        <option value="1">Whole beans</option>
-                        <option value="2">Grinded</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
+                <button type="button" class="col btn btn-dark btn-lg p-3 m-3">바로 구매하기</button>
+                <button type="button" class="col btn btn-outline-dark btn-lg p-3 m-3">
+                  장바구니 담기
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- 상품상세설명 -->
     <section>
-      <!--상품상세설명-->
-      <div>상세정보, 구매안내 페이지 이동 버튼</div>
-      <hr />
-      <div>
-        <h4>상품상세정보</h4>
-        <hr />
+      <!-- 상세정보, 구매안내 페이지 이동 버튼 -->
+      <div class="container p-5">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#product-detail" class="nav-link px-2 text-body-secondary">상품상세정보</a>
+          </li>
+          <li class="nav-item">
+            <a href="#notification" class="nav-link px-2 text-body-secondary">상품구매안내</a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <p>배전, 과테말라</p>
-        <p>아로마</p>
+
+      <div id="product-detail" class="container p-5">
+        <h5>상품상세정보</h5>
+        <hr />
+        <div>
+          <h3>[배전] 과테말라 실베리오</h3>
+          <h3>Guatemala Sliverio</h3>
+          <p>아로마</p>
+        </div>
+        <hr />
+        <div>
+          <p class="fs-6">
+            * 정오(12시)까지 주문/결제 완료한 상품에한해 당일 발송되며 <br />
+            금요일 발송한 상품의 경우 월요일에 수령이 가능합니다, 주문 시 참고해 주시기 바랍니다.
+          </p>
+        </div>
+        <div class="text-center pt-5">
+          <h2>추출 레시피</h2>
+          <img src="img/method_esprsso.png" />
+        </div>
+      </div>
+      <!-- 상세정보, 구매안내 페이지 이동 버튼 -->
+      <div class="container p-5">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#product-detail" class="nav-link px-2 text-body-secondary">상품상세정보</a>
+          </li>
+          <li class="nav-item">
+            <a href="#notification" class="nav-link px-2 text-body-secondary">상품구매안내</a>
+          </li>
+        </ul>
+      </div>
+      <div id="notification" class="container p-5">
+        <h5>상품상세정보</h5>
       </div>
     </section>
     <footer>

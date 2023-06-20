@@ -1,0 +1,10 @@
+.card-over-text-ko {
+  position: absolute;
+  top: 30px;
+  color: #fff;
+}
+.card-over-text-en {
+  position: absolute;
+  bottom: 30px;
+  color: #fff;
+}

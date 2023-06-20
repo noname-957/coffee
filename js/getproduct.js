@@ -1,6 +1,6 @@
 async function getProducts() {
   console.log('상품목록조회');
-  const productList = ;
+  const productListApiUrl = 'https://noname-957.github.io/coffee/js/product.js';
 
   //http method : GET
   const response = await fetch(productListApiUrl);
